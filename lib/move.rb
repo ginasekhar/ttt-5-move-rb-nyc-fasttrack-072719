@@ -7,3 +7,14 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+
+def input_to_index(user_input)
+  position = user_input.to_i
+    if position >= 1 && position <= 9
+      index = position - 1
+      return index
+    else
+      puts "That is not a valid postion. Please try again"
+    end #if
+end #input_to_index
+
